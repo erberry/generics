@@ -7,7 +7,7 @@ type Node[T any] struct {
 	Index int
 }
 
-// FixSizeArray 是一个添加及删除元素时间复杂度均为O(1)的固定大小数组
+// FixSizeArray It is a fixed size array with O(1) time complexity for adding and deleting elements.
 type FixSizeArray[T any] struct {
 	nodes    []Node[T]
 	freeHead *Node[T]
